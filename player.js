@@ -10,7 +10,7 @@ class Player{
         };
         this.size = 50;
         this.image = new Image();
-        this.image.src = "./Images/spaceship.png";
+        this.image.src = "./Images/ship.png";
     }
     draw(){
         context.fillStyle = "red";
