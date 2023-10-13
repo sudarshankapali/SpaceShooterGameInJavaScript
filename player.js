@@ -21,6 +21,9 @@ class Player{
     move(){
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
+        if(this.position.x < 0) this.position.x = 0;
+        if(this.position.x + this.size > canvas.width) this.position.x = 350;
+        if(this.position.y + this.size > canvas.height) this.position.y = 350;
     }
     update(){
         this.draw();
